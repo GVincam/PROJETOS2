@@ -1,0 +1,67 @@
+#tipo{
+    color: white;
+   
+}
+
+#tipoDois{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.tlogo{
+    color: rgb(0, 245, 224); text-shadow: 4px 2px 5px rgb(0, 0, 0);
+    
+}
+
+.tlogoUm{
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 2px black;
+}
+
+.img-fluid{
+    border-radius: 10px;
+    box-shadow: 5px 6px 15px 2px rgb(2, 241, 149);
+}
+
+.noticias{
+    background-color: rgb(180, 242, 250); 
+    border-radius: 20px;
+ 
+}
+
+.welcome{
+    background-color: rgb(180, 242, 250); 
+    border-radius: 20px;
+   
+}
+
+.sombradinamica{
+    font-size: 3rem;
+     color: #fafafa;
+  text-align: center;
+  animation: moverSombra 2s infinite alternate;
+  text-shadow: 2px 2px 2px #00ff88;
+    
+}
+
+@keyframes moverSombra {
+  0% {
+    text-shadow: 2px 2px 9px #00ffb3;
+  }
+  25% {
+    text-shadow: -2px 2px 10px #00ccff;
+  }
+  50% {
+    text-shadow: -2px -2px 5px #00ffdd;
+  }
+  75% {
+    text-shadow: 2px -2px 10px #00ff80;
+  }
+  100% {
+    text-shadow: 2px 2px 10px #21f1f8;
+  }
+}
+
+.card{
+    background-color: rgb(102, 220, 250);
+}

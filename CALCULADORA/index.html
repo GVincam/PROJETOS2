@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CALCULADORA ONLINE </title>
+    <link rel="stylesheet" href="estilo7.css">
+</head>
+<body>
+    
+    <!-- um espaço que vai entrar a calculadora -->
+    <div class="painel">
+        <h1 id="titulo"> CALCULADORA ONLINE </h1>
+
+        <p id="opcao"> Digite um número: </p>
+
+        <!-- input = enviar algum dado! -->
+        <!-- tipo numérico -->
+        <input type="number" id="n1" placeholder="Digite o primeiro número!">
+        <p id="opcao2"> Digite um numéro: </p>
+        <!-- placeholder = texto fantasma -->
+        <input type="number" id="n2" placeholder="Digite o segundo número!">
+        <br> <br> 
+        <button class="botao" onclick="somar()"> + </button>
+        <button class="botao" onclick="multiplicar()"> x </button>
+        <button class="botao" onclick="dividir()"> / </button>
+        <button class="botao" onclick="subtrair()"> - </button>
+        <br><br><br>
+        <button class="botao" onclick="limpar()"> Limpar </button>
+        <br> <br>
+        
+        <div id="resultado"></div>
+
+    </div>
+    
+    <div>
+        <img src="images/ARVORE.png" alt="arvore" class="arvore">
+        <img src="images/ARVORE.png" alt="arvore" class="arvore2">
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script src="script7.js"></script>
+</body>
+</html>
