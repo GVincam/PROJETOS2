@@ -1,0 +1,33 @@
+.menu{
+    background: linear-gradient( to right, rgb(4, 6, 122), rgb(2, 2, 204), rgb(1, 4, 184) ) ;
+
+    /* background-color: rgb(4, 6, 122); */
+}
+
+.d-blockw-100{
+    width: 2500px;
+}
+
+.carrossel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    }
+
+.whats{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(22, 95, 0);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 2px 7px 3px rgba(0, 0, 0, 0.205);
+}
+
