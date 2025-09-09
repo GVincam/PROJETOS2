@@ -12,7 +12,7 @@ async function buscar(){
         //joga na imagem o link da foto
         dogimg.src= dados.message;
 
-    }catch(error){
+    }catch(error){ s
         //catch serve para capturar erro se der errado
         alert("Erro ao buscar dog!", error);
     }
