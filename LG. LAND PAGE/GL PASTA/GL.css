@@ -6,64 +6,56 @@
 
 }
 
-.item{
-    font-family: "Rubik Mono One", monospace;
+body{
+    @media (max-width: 767.98px) {
+  /* Aqui você pode mudar a direção do layout, por exemplo */
+  .sua-classe {
+    flex-direction: column;
+  }
 }
 
-.display{
-    display: flex;
-    justify-content: center;
+/* Estilos para telas maiores (ex: desktops) */
+@media (min-width: 992px) {
+  .sua-classe {
+    flex-direction: row;
+  }
+}
 }
 
-.card-link{
-    font-family: "Anton", sans-serif;
+div.container{
+    border: 2px solid red;
+    max-height: 7800px;
+    width: 1950px;
+    align-content: center;
+    justify-items: center;
+    display: inline-block;
+    padding: 10px;
+    background-color: linear-gradient(to bottom, blue, blue);
 }
 
-.card-list .card-item{
-    list-style: none;
-
+div.item{
+border: 2px solid blue;
+font-family: "Rubik Mono One", monospace;
+margin: 0px;
+padding: 0px;
+gap: 0px;
 }
 
-.card-list .card-item .card-link{
+
+
+img#placa{
     width: 400px;
-    display: block;
-    background: rgb(0, 47, 255);
-    padding: 18px;
-    border-radius:12px;
-    text-decoration: none;
-    color: white;
-
+    align-items: flex-end;
+    
 }
 
-.card-list .card-link .card-image{
-    max-width: 100%;
-    aspect-ratio: 16 / 12;
-    object-fit: cover;
-    border-radius: 10px;
+h1#tipo1{
+    text-align: center;
+    font-size: 60px;
+    
 }
-
-.card-list .card-link .badge{
-    color: rgb(255, 217, 0);
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin: 16px 0 18px;
-    background: rgb(117, 86, 2);
-    width: fit-content;
-    border-radius: 50px;
-}
-
-.card-list .card-link .card-title{
-    font-size: 1.19rem;
-    color: white;
-    font-weight: 600;
-}
-
-.card-list .card-link .card-button{
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
-    margin: 35px 0 5px;
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+h1#tipo2{
+    text-align: center;
+    font-size: 35px;
+    
 }
