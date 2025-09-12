@@ -1,37 +1,6 @@
-
 *{
     margin: 0;
     padding: 0;
 }
 
-
-body.container{
-    display: grid;
-    grid-template-areas: 
-    'side' 'container-one' 
-        'cards'
-
-    ;
-}
-.side{
-    border: 2px solid blue;
-    height: 1000px;
-    width: 300px;
-    
-}
-
-div.container-one{
-    border: 2px solid yellow;
-}
-
-div.cards{
-    border: 2px solid purple;
-}
-
-div.content{
-    border: 2px rgb(0, 255, 0);
-}
-
-footer.rodape{
-    border: 2px solid red;
-}
+.con

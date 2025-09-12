@@ -9,6 +9,11 @@ function buscar(){
     .then(response => response.json())
     .then(dados => {
         // escrever no html
-        tela.innerHTML = `<h2> ${dados.name} </h2>`;
+        tela.innerHTML = 
+        `
+        <h2> ${dados.name} </h2>
+        <img class="pokemon" src="${dados.sprites.front_default}">
+        <img class="pokemon" src="${dados.sprites.back_default}">
+        `;
     })
 }
