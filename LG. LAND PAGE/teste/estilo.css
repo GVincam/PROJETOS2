@@ -1,0 +1,57 @@
+@charset "UTF=8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+p, h1, h1{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+header, section.normal {
+    padding: 20px;
+
+}
+
+section.flex-content {
+    padding: 20px;
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+section > article {
+    border: 2px dashed green;
+}
+
+article.text-media{
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+}
+
+article.media-text{
+    display: flex;
+    flex: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text{
+    flex: 1 1 1000px;
+    border: 2px dashed blue;
+}
+
+article > div.media{
+    flex: 1. 0 800px;
+    border: 2px dashed red;
+}
