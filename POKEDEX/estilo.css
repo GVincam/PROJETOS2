@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+/* DEFINE A FONTE PADRÃO PARA TODA PAGINA */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.87), rgba(255, 0, 0, 0.479), rgb(255, 179, 179));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+
+
+.pokeContainer{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+.pokemon{
+    background-color: rgb(119, 1, 1);
+    border-radius: 20px;
+    border: outset white;
+    padding: 30px;
+}
+
+.pokemon:hover{
+    background-color: rgb(194, 2, 2);
+    transition: calc(2s);
+}
+
+.infopoke{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 39px  rgb(255, 0, 0);
+    
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px inset;
+    width: 180px ;
+    height: 180px;
+    background-image: linear-gradient(45deg, red, orange);
+    backdrop-filter: blur(17px);
+    opacity: o.7;
+    /* background-color: rgba(255, 153, 0, 0.911); */
+}
+
+.imgContainer:hover{
+   
+    transition: background-color linear-gradient(to right, rgb(255, 166, 0), rgb(255, 0, 0)) 0.1s ;
+}
+
+.imgContainer img{
+    max-width: 90%;
+    margin-top: 20%;
+}
+.namePoke{
+    text-decoration: color(srgb-linear red green blue);
+}
+
