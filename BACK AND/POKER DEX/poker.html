@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="poker.css">
 </head>
 <body>
-    <div class="painel">
+    <div class="painel" style="display: flexbox;">
         <!-- imagem de fundo -->
-        <img src="link da foto" alt="">
-        <h1> POKER DEX </h1>
-        <!-- Simulando tela -->
-         <div id="tela"></div>
-         <input type="text" id="entrada" placeholder="Digite um pokémon">
-         <button onclick="buscar()"> Caçar </button>
-         <br>
-         <button onclick="anterior()"> Anterior </button>
-         <button onclick="proximo()"> Próximo </button>
-
+        <div class="card">
+            <img src="link da foto" alt="" id="poke">
+            <h1 id="font"> POKER DEX </h1>
+            <!-- Simulando tela -->
+            <div id="tela"></div>
+            <input type="text" id="entrada" placeholder="Digite um pokémon">
+            <button onclick="buscar()"> Caçar </button>
+            <br>
+            <button onclick="anterior()"> Anterior </button>
+            <button onclick="proximo()"> Próximo </button>
+        </div>
     </div>
 
 

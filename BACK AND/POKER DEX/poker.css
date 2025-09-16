@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rubik+Mono+One&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 255, 0.507);
+    background-image: url(https://wallpaperswide.com/download/pokemon_video_game-wallpaper-3840x2160.jpg);
+    background-size: cover;
+    margin: 45px;
+}
+
+div.painel{
+
+    display: block;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    max-width: 400px;
+    min-height: 500px;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0px 1px 15px 1px;
+}
+
+div.card{
+    border: 2px solid rgb(255, 208, 0);
+    padding: 20px;
+    gap: 10px;
+    min-width: 200px;
+    max-height: 400px;
+    height: 350px;
+    margin: auto;
+    background-color: rgba(255, 255, 0, 0);
+    padding: 5px;
+    box-shadow: 0px 1px 30px 1px  rgb(255, 153, 0);
+}
+
+#font{
+    font-family: "Press Start 2P", system-ui;
+    color: yellow;
+    text-shadow: 0px 1px 10px rgb(255, 0, 0);
+}
+
+div#tela{
+    font-family: ;
+   
+}
+
+.pokemon{
+    width: 100px;
+}
