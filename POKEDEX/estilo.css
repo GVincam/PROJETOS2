@@ -19,12 +19,11 @@ body{
 }
 
 
-div.container-pai{
+div.container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto  ;
+    grid-template-rows: auto auto auto auto auto  ;
     gap: 20px;
-    margin-top: -180px;
 }
 
 .pokeContainer{
@@ -88,10 +87,10 @@ div.container-pai{
     align-items: center;
     border-radius: 50%;
     border: 5px inset rgb(255, 255, 0);
-    width: 180px ;
-    height: 180px;
+    width: 100px ;
+    height: 100px;
     background-image: linear-gradient(45deg, rgba(0, 255, 255, 0.699), rgb(0, 47, 255));
-    backdrop-filter: blur(17px);
+    /* backdrop-filter: blur(17px); */
     /* background-color: rgba(255, 153, 0, 0.911); */
 }
 
