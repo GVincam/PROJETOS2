@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rubik+Mono+One&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rubik+Mono+One&family=Turret+Road:wght@200;300;400;500;700;800&family=VT323&display=swap');
 
 *{
     margin: 0;
@@ -22,9 +23,12 @@ div.painel{
     align-content: center;
     max-width: 400px;
     min-height: 500px;
+    width: 800px;
     margin: auto;
     padding: 40px;
     box-shadow: 0px 1px 15px 1px;
+    animation: rgb 10s infinite ;
+    
 }
 
 div.card{
@@ -32,25 +36,76 @@ div.card{
     padding: 20px;
     gap: 10px;
     min-width: 200px;
-    max-height: 400px;
-    height: 350px;
+    height: 520px;
     margin: auto;
-    background-color: rgba(255, 255, 0, 0);
+    background-color: rgba(255, 255, 0, 0.027);
     padding: 5px;
     box-shadow: 0px 1px 30px 1px  rgb(255, 153, 0);
+    animation: carregar 10s infinite;
+
 }
 
 #font{
     font-family: "Press Start 2P", system-ui;
     color: yellow;
     text-shadow: 0px 1px 10px rgb(255, 0, 0);
+    padding: 10px;
 }
 
 div#tela{
+    font-family: "VT323", monospace ;
+    font-size: 24px;
+    padding: 10px;    
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 1px 10px 0px rgba(255, 230, 0, 0.452);
+    color: yellow;
+    text-shadow: 0px 1px 10px rgb(255, 0, 0);
+    padding: 10px;
+    margin: 10px;
     
    
 }
 
+div.psq{
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+}
+
 .pokemon{
-    width: 100px;
+    width: 120px;
+
+}
+
+#entrada{
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px ;
+    border: 1px groove red;
+    box-shadow: 0px 1px 10px 0px red;
+    
+}
+
+@keyframes carregar{
+    0%{background-color: rgba(255, 255, 0, 0.829);}
+    25%{background-color: rgba(255, 255, 0, 0);}
+    50%{background-color: rgba(255, 166, 0, 0.842);}
+    75%{background-color: rgba(255, 166, 0, 0);}
+    100%{background-color: rgba(255, 255, 0, 0.795);}
+}
+
+@keyframes rgb{
+    0%{box-shadow: red;}
+    10%{box-shadow: yellow;}
+    20%{box-shadow: red;}
+    30%{box-shadow: yellow;}
+    40%{box-shadow: red;}
+    50%{box-shadow: yellow;}
+    60%{box-shadow: red;}
+    70%{box-shadow: yellow;}
+    80%{box-shadow: red;}
+    90%{box-shadow: yellow;}
+    100%{box-shadow: red;}
 }
