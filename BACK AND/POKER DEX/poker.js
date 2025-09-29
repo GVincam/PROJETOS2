@@ -18,8 +18,8 @@ function buscar(){
         tela.innerHTML = 
         `
         <h2> ${dados.name} </h2>
-        <img class="pokemon" src="${dados.sprites.front_default}">
-        <img class="pokemon" src="${dados.sprites.back_default}">
+        <img class="pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${dados.id}.gif">
+        <img class="pokemon-1" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/${dados.id}.gif">
         <p> Id: ${dados.id} </p>
         <p> Tipo: ${dados.types.map(type => type.type.name)} </p>
         <p> Habilidades: ${dados.abilities.map(ability => ability.ability.name)} </p>
@@ -36,3 +36,15 @@ function anterior(){
     contador = contador - 1;
     buscar();
 }
+
+document.getElementById("entrada").addEventListener("keydown", function(event){
+    if(event.key == "Enter"){
+        buscar();
+    }
+    if(event.key == "ArrowLeft"){
+        anterior();
+    }
+    if(event.key == "ArrowRight"){
+        proximo();
+    }
+});

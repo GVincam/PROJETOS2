@@ -27,7 +27,8 @@ div.painel{
     margin: auto;
     padding: 40px;
     box-shadow: 0px 1px 15px 1px;
-    animation: rgb 10s infinite ;
+   
+    
     
 }
 
@@ -36,7 +37,7 @@ div.card{
     padding: 20px;
     gap: 10px;
     min-width: 200px;
-    height: 520px;
+    height: 580px;
     margin: auto;
     background-color: rgba(255, 255, 0, 0.027);
     padding: 5px;
@@ -63,6 +64,7 @@ div#tela{
     text-shadow: 0px 1px 10px rgb(255, 0, 0);
     padding: 10px;
     margin: 10px;
+
     
    
 }
@@ -75,6 +77,18 @@ div.psq{
 
 .pokemon{
     width: 120px;
+    border: none ;
+
+}
+
+.pokemon-1{
+    width: 120px;
+    border: 5px inset rgb(0, 0, 0);
+    background-color: rgba(59, 59, 59, 0.767);
+    margin: 5px;
+    padding: 5px;
+    border-radius: px;
+    filter: opacity(0.6);
 
 }
 
@@ -85,6 +99,8 @@ div.psq{
     border-radius: 20px ;
     border: 1px groove red;
     box-shadow: 0px 1px 10px 0px red;
+    font-family: "VT323", sans-serif;
+    animation: jelly 10s;
     
 }
 
@@ -96,16 +112,23 @@ div.psq{
     100%{background-color: rgba(255, 255, 0, 0.795);}
 }
 
-@keyframes rgb{
-    0%{box-shadow: red;}
-    10%{box-shadow: yellow;}
-    20%{box-shadow: red;}
-    30%{box-shadow: yellow;}
-    40%{box-shadow: red;}
-    50%{box-shadow: yellow;}
-    60%{box-shadow: red;}
-    70%{box-shadow: yellow;}
-    80%{box-shadow: red;}
-    90%{box-shadow: yellow;}
-    100%{box-shadow: red;}
+button.cacar{
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px inset red;
+    box-shadow: 0px 1px 10px 0px orange;
+}
+
+button.cacar:hover{
+    animation: jelly 0.6s;
+}
+
+@keyframes jelly{
+    0%{transform: scale(1.1); }
+    25%{transform: scale(0.9, 1.1); }
+    50%{transform: scale(1.1, 0.9); }
+    75%{transform: scale(0.95, 1.05); }
+    100%{transform: scale(1,1); }
 }
