@@ -7,3 +7,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    background-color: #210042;
+    
+}
+
+.navbar{
+    border: 2px solid blue;
+    height: 100px;
+    position: absolute;
+    z-index: 5;
+    width: 15%;
+    height: 100%;
+}
+
+#head-image{
+    width: 100vw;
+    position: fixed;
+}
+    
