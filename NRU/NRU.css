@@ -26,4 +26,26 @@ body{
     width: 100vw;
     position: fixed;
 }
+
+#row-1{
+    position: absolute;
+    left: 1060px;
+    width: 450px;
+}
+
+#row-2{
+    position: absolute;
+    left: 450px;
+    width: 450px;
+    margin-top: 300px;
+}
+
+#mulher{
+    width: 680px;
+    left: 580px ;
+    position: absolute;
+    
+}
+
+
     
