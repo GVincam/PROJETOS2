@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Ephesis&family=Knewave&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Ephesis&family=Knewave&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+
+ font-family: "Merriweather Sans", sans-serif;
+}
+
+body{
+   background: rgb(114, 59, 7) ; 
+}
+
+div.card{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows:  auto auto;
+    border-radius: 20px ;
+    width: 400px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+div.perfil{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(112, 56, 19);
+    color: white;
+    bottom: 20px;
+    box-shadow: 0px 0px 4px 5px rgba(255, 187, 0, 0.527);
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100%{
+        transform: translateY(0);       
+    } 50% {
+        transform: translateY(-8px
+        );
+    }
+}
+
+div.bodyland{
+    
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: rgb(112, 56, 19);
+    box-shadow: 0px 0px 4px 5px rgba(255, 187, 0, 0.527);
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100%{
+        transform: translateY(0);       
+    } 50% {
+        transform: translateY(-8px
+        );
+    }
+}
+
+div.options{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    
+    
+}
+
+div.options, ul, li{
+    padding: 5px ;
+}
+
+div.options, ul, li, a{
+    list-style: none;
+    text-decoration:none ;
+    font-size: 25px;
+    color: white;
+}
+
