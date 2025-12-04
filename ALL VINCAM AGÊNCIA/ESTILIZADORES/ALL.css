@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Goldman:wght@400;700&family=Stalinist+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(20, 0, 109);
+} 
+
+nav.navbar{
+    border-radius: 0px 0px 10px 10px;
+    height: 80px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 50px;
+    padding: 20px;
+    justify-content: space-between ;
+    background-image: linear-gradient(90deg, rgba(0, 0, 255, 0), rgb(19, 2, 255)60%) ;
+    color: white;
+}
+
+div.menu-options, ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 5px;
+}
+
+div.menu-options, ul, a{
+    color: white;
+}
+
+a.fa-box{
+    color: white;
+}
+
+img#logo{
+    width: 60px;
+    border-radius: 30px;
+}
+
+
+div.boxoptions{
+    overflow: hidden;
+}
+
