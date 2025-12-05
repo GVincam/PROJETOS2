@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Goldman:wght@400;700&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Goldman:wght@400;700&family=Keania+One&family=Stalinist+One&display=swap');
 
 *{
     padding: 0;
@@ -22,6 +22,7 @@ nav.navbar{
     justify-content: space-between ;
     background-image: linear-gradient(90deg, rgba(0, 0, 255, 0), rgb(19, 2, 255)60%) ;
     color: white;
+    
 }
 
 div.menu-options, ul{
@@ -33,15 +34,23 @@ div.menu-options, ul{
 
 div.menu-options, ul, a{
     color: white;
+    list-style: none;
 }
 
 a.fa-box{
     color: white;
+    list-style: none;
+    
+}
+
+a.fa-box, a{
+    list-style: none;
 }
 
 img#logo{
     width: 60px;
     border-radius: 30px;
+    
 }
 
 
@@ -49,3 +58,34 @@ div.boxoptions{
     overflow: hidden;
 }
 
+div.navside{
+    max-width: 100vw;
+    min-width: 100vw;
+}
+
+div.navside, button, a{
+    text-decoration: none;
+}
+
+button#navegue{
+    width: 200px;
+    max-width: 100vw;
+    border-radius: 0px 30px;
+    height: 50px;
+    margin-left: 1500px;
+    position: fixed;
+    
+}
+
+ a#navegar{
+    background-color: aliceblue;
+    color: black;
+    font-size: 30px;
+    font-family: "Keania One", sans-serif ;
+    border-radius: 10px;
+    
+}
+
+div.nav{
+    background: rgba(255, 0, 0, 0.329);
+}
