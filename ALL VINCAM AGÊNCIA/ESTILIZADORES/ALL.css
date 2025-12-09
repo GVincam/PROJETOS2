@@ -87,21 +87,18 @@ button#navegue{
 }
 
 div.nav{
-    background: rgba(255, 0, 0, 0.329);
-    height: 300px;
-    width: 400px;
-    padding: 30px;
+    margin-left: 1500px;
+    font-family: "Keania One", sans-serif ;
     
 }
 
 div.nav, ul.nav-options{
     flex-direction: column;
-    font-size: 20px;
-    border: 2px solid;
-
+    font-size: 40px;
+    
 }
 
 div.nav, ul.nav-options, li#a{
-    border: 1px solid;
+
     gap: 20px;
 }
