@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teste Agenda</title>
+</head>
+
+<body>
+
+<h1>Minha Agenda</h1>
+
+<input type="text" id="tarefa" placeholder="Digite uma tarefa">
+
+<button id="adicionar">Adicionar</button>
+
+<div id="lista"></div>
+
+<script>
+
+let input = document.querySelector("#tarefa");
+let botao = document.querySelector("#adicionar");
+let lista = document.querySelector("#lista");
+
+botao.addEventListener("click", function(){
+
+    let novaTarefa = document.createElement("div");
+
+    novaTarefa.setAttribute("class", "tarefa");
+
+    novaTarefa.textContent = input.value;
+
+    lista.appendChild(novaTarefa);
+
+});
+
+</script>
+
+</body>
+</html>

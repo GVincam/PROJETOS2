@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TRAINING </title>
+</head>
+<body>
+
+    <button onclick="digaMeunome()">Clique aqui</button>
+
+    <h2> Meu nome é: </h2>
+    <button onclick="advinha('Maria')"> Adivinha? </button>
+
+    <h3> Quanto é 5 + 2? </h3>
+    <button onclick="soma(5, 2)"> somar </button>
+
+    <h3> Quanto é 6 + 10? </h3>
+    <button onclick="soma(6, 10)"> somar </button>
+
+    <h3> Quanto é 9 + 390?</h3>
+    <button onclick="soma(9,390)"> somar </button>
+
+    <h3> Quanto é 40 + 23,4? </h3>
+    <button onclick="soma(40, 23.4)"> somar </button>
+
+    
+
+
+
+    <script>
+        // FUNÇÃO VOID
+        function digaMeunome(){
+            console.log("Gs.Night");
+        }
+        // FUNÇÃO COM PARAMETRO
+        function advinha(nome){
+            console.log("O nome é " + nome);
+        }
+        // FUNÇÃO COM PARAMETRO E VARIALVEL
+        function soma(num1, num2){
+            const resultado = parseInt(num1) + parseFloat(num2);
+            console.log("O resultado é! " + resultado);
+        }
+        // FUNÇÃO DE RETORNO
+        function listaEndividados(receita, gastos){
+            if(receita > gastos){
+                return "Você não esta Endividado!";
+            } else {
+                return "Vamos acertar as contas!";
+            }
+        }
+
+        const maria = listaEndividados(6000, 8000);
+        const jorge = listaEndividados(5000, 1000);
+
+        console.log(maria);
+        console.log(jorge);
+
+        
+        
+
+    </script>
+</body>
+</html>

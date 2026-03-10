@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VAMOS ACERTAR </title>
+</head>
+<body>
+    
+    <h1> Bote o seu nome se você quer consultar suas dívidas!</h1>
+
+    <div class="dividas">
+
+        <h2> RECEITA </h2>
+        <input id="receita" placeholder="Sua receita" type="number">
+
+        <br>
+        <br>
+
+        <h2> GASTOS </h2>
+        <input  id="gastos" placeholder="Seus gastos" type="number">
+
+        <br>
+        <br>
+
+        <button onclick="endividados()"> CONSULTAR </button>
+
+        <section class="painel"> 
+            
+            <h1> PAINEL DE DÍVIDAS </h1>
+
+        </section>
+
+        <!-- <div class="green" style="display: none;"> <h1> Você esta no verde! </h1> </div>
+
+        <div class="red" style="display: none;"> <h1> Você esta no vermelho!</h1> </div> -->
+
+    </div>
+
+
+    <script>
+
+
+        function endividados(receita, gastos){
+
+            receita = document.getElementById("receita").value;
+            gastos = document.getElementById("gastos").value;
+
+            if(receita > gastos){
+        
+                // botao.addEventListener("click", function(){
+
+                    let green = document.createElement("div");
+
+                    green.classList.add("green");
+                    green.innerText = "Você esta no verde!";
+
+                    // document.body.section.appendChild(green);
+
+                    document.querySelector(".painel").appendChild(green);
+
+                    
+
+                    return "Você esta no verde!";
+
+                    receita.value = "";
+                // })
+            } else {
+
+                let red = document.createElement("div");
+
+                red.classList.add("red");
+                red.innerText = "Você esta no vermelho!";
+                document.querySelector(".painel").appendChild(red);
+
+               
+                return "Você esta no vermelho!";
+            
+                 gastos.value = "";
+
+            }
+        }
+
+    </script>
+</body>
+</html>
