@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> System Test</title>
+    <link rel="stylesheet" href="ss_system.css">
+</head>
+<body>
+
+    <div class="painel">
+
+        <div class="caixa">
+            <h1> SS Menu </h1>
+
+            <button id="verEstoque"> VER ESTOQUES </button>
+        </div>
+
+    </div>
+
+
+        <div class="caixaDeOpcao">
+
+            <!-- CALÇADOS -->
+            <div>
+                <h2> CALÇADOS </h2>
+
+                <div>
+
+                    <button onclick="abrirEstoque(estoque)">
+                        Estoque 
+                    </button>
+
+                    <button onclick="abrirTrocas(trocas)">
+                        Trocas
+                    </button>
+
+                    <button onclick="abrirPedidos(pedidos)">
+                        Pedidos
+                    </button>
+                    
+                    <button onclick="abrirPromocoes(promocoes)">
+                        Promoções
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CADASTROS -->
+            <div>
+
+                <h2> CADASTROS </h2>
+
+                <div>
+
+                    <button onclick="abrirPendentes(pendentes)">
+                        Pendentes
+                    </button>
+
+                    <button onclick="abrirAcertos(acertos)">
+                        Acertos
+                    </button>
+
+                    <button onclick="abrirClientes(clientes)">
+                        Clientes
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- RECEITA -->
+            <div>
+
+                <h2> RECEITA </h2>
+
+                <div>
+                    <button onclick="abrirFaturamento(faturamento)">
+                        Faturamento
+                    </button>
+                    
+                    <button onclick="abrirDespesas(despesas)">
+                        Despesas
+                    </button>
+                    
+                    <button onclick="abrirLucro(lucro)">
+                        Lucro
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- FIM DE CAIXA DE OPÇÕES -->
+
+    
+
+
+    <script src="ss_system.js"></script>
+</body>
+</html>
