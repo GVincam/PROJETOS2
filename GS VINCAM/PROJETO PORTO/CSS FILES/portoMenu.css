@@ -1,43 +1,19 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.bodyMenu{
-    background-image: linear-gradient( #00a3ff, rgba(255, 255, 255, 0), white, #00a3ff);
-    height: 100vh;
-
-}
-
 .menu{
-    /* background-image: linear-gradient( #00a3ff, rgba(255, 255, 255, 0), #ffffff00, #00a3ff);
-    height: 100vh; */
-    
-}
-
-.headerFather{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto;
-    justify-content: space-evenly;
-    gap: -20%;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
 }
 
 
-#imgPP{
-    width: 120px;
-}
-
-#textPP{
-    width: 220px;
-}
-
-
-#imgPortoMaringa{
-   
-    top: 0;
-    left: 0;
-    width: 100vw;
-  
+#logoPP{
+    width: 100px;
+    height: 100px;
 }
