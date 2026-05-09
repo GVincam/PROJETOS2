@@ -1,0 +1,28 @@
+.aparecerItens{
+    display: none;
+    padding: 10px;
+}
+
+.itemSapato{
+    border: solid 1px rgb(255, 187, 0);
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}   
+
+#imgSapatos{
+    width: 200px;
+    margin-left: -1px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+
+}

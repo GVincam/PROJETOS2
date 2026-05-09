@@ -1,0 +1,145 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #272727;
+    color: white;
+  }
+  
+  .aproveite{
+    background: darkgray;
+    border-radius: 80px;
+    border: solid 2px white;
+    margin:auto;
+    width:600px;
+    height: 90px;
+    
+  }
+
+  
+  #info{
+    text-align: center;
+    padding: 10px;
+    
+    animation: altereCor 5s infinite;
+  }
+  
+  @keyframes altereCor {
+    0% {
+      color: blue;
+    }
+    
+    25% {
+      color: purple;
+    }
+    
+    50% {
+      color: darkblue;
+    }
+    
+    75% {
+      color: mediumpurple;
+    }
+    
+    100% {
+      color: blue;
+    }
+    
+   }
+   
+   /* OFICIAL LOJA */
+   
+   .loja {
+    
+    display:grid;
+    grid-template-columns:auto auto 100px;
+    grid-template-rows: auto ;
+    
+    justify-content: center;
+    gap: 20px;
+    align-content: center ;
+    text-align:center;
+    padding:60px;
+    margin: center ;
+   }
+   
+   @media (max-width: 900px){
+     
+  #info {
+    text-align: center;
+    
+    animation: altereCor 5s infinite;
+  }
+  
+  @keyframes altereCor {
+    0% {
+      color: blue;
+    }
+    
+    25% {
+      color: purple;
+    }
+    
+    50% {
+      color: darkblue;
+    }
+    
+    75% {
+      color: mediumpurple;
+    }
+    
+    100% {
+      color: blue;
+    }
+    
+  }
+     
+     .loja{
+       display: grid;
+       grid-template-columns: auto auto auto;
+     }
+   }
+   
+   .comprar{
+     border: solid 1px orange;
+     background: dimgray;
+     
+   }
+   
+   .excluir {
+     border: solid 1px red;
+     background: dimgray;
+   }
+   
+   .ganhar {
+     border: solid 1px lawngreen;
+     background: dimgray;
+     
+   }
+   
+   .caixaValor{
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-template-rows: auto;
+     
+   }
+   
+   .compras{
+     border: solid 1px blue;
+     text-align: center;
+     justify-content: center;
+     align-content: center;
+     width:600px;
+     margin:auto;
+     background: dimgray;
+   }
+   
+   .pontuacao{
+     border: solid 1px yellow;
+     background: dimgray;
+     width: 150px;
+     text-align: center;
+   }
