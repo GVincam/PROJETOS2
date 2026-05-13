@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EXERCÍCIOS DOIS </title>
+</head>
+<body>
+
+    <button onclick="mudarCor()"> 
+        Mude a Cor! 
+    </button>
+
+    <div class="cor">
+
+    </div>
+
+    <div class="cor">
+
+    </div>
+
+    <div class="cor">
+
+    </div>
+
+    <div class="cor">
+
+    </div>
+
+    <div class="cor">
+
+    </div>
+
+    <div class="cor">
+
+    </div>
+    
+
+
+    <script>
+
+        let cores = document.querySelectorAll(".cor");
+
+        function mudarCor(){
+
+        for (let i = 0; i < cores.length; i++) {
+            cores[i].style.width = "100px";
+            cores[i].style.height = "100px";
+            cores[i].style.background = "blue";
+        }
+
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EXERCÍCIOS </title>
+</head>
+
+
+
+
+<style>
+
+ #resultado{
+    background: black;
+    color: blue;
+ }
+
+
+</style>
+
+
+
+
+<body>
+
+    <h1 id="name"> Mude meu nome!  </h1>
+
+    <button onclick="nome('gsSilva')"> Qual é meu nome? </button>
+
+    <p id="descricao"> </p>
+
+    <button onclick="conhecer()"> 
+        Me Conheça
+    </button>
+    
+    <h2 id="resultado"> </h2>
+
+    <button onclick="mostrarIdade()"> 
+        e minha idade é!
+    </button>
+
+
+    <script>
+        function nome(gsSilva){
+
+            let name1 = document.getElementById("name");
+
+            name1.innerText = gsSilva;
+
+
+        }
+
+        function conhecer(){
+
+        document.getElementById("descricao").innerText = "Olá Mundo e Olá a todos, meu nome é Gs Silva, sou dono da Vincam Lab!";
+
+
+        }
+
+        function somar(){
+            return 10 + 11;
+        }
+
+        function mostrarIdade(){
+
+            let resultado = somar();
+
+            document.getElementById("resultado").innerText = resultado
+
+        }
+
+        
+        
+
+
+    </script>
+</body>
+</html>
