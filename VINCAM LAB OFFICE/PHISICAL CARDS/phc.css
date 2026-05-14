@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+#campoBatalha{
+    border:solid 4px black;
+    min-height: 90vh;
+    /* display:none; */
+  }
+
+.container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    height: 50vh;
+    padding: 10px;
+}
+
+.container1 div {
+    border: solid 2px black;
+    
+   
+}
+
+#campo1{
+    width: 100%;
+}
+
+
+#campo2{
+    width: 100%;
+}
