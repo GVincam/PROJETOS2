@@ -1,0 +1,130 @@
+*{
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#abrirJogo{
+  display: block;
+  margin: auto;
+  border:solid 2px #5000FF;
+  background: #4D4D4E;
+  color: #FFFFFF;
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  min-height: 30vh;
+  max-width: 40vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#jogarPhb{
+  margin: 20px;
+  font-size: 30px;
+  background: blue;
+  animation: altereCor 5s infinite;
+  border-radius: 10px;
+}
+
+@keyframes altereCor{
+  0%{
+    background: blue;
+  } 25% {
+    background: #6CC2FF;
+  } 50% {
+    background: #000C8F;
+  } 75% {
+   background: #0095FF;
+  } 100% {
+    background: blue;
+  }
+}
+
+#btnTutors{
+  height: 100px;
+  width:20vw;
+  margin-left: 23%;
+  text-align: center;
+  font-size: 20px;
+  background: blue;
+  color: #fff;
+  border: 2px solid #0900FF91;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #FFFFFFBF;
+  padding: 30px;
+}
+
+#tutorial{ 
+    height: 60vh;
+    width:20vw;
+    display: none;
+    padding:30px;
+    margin-top:60px;
+    background: #00000029;
+    border: solid 2px blue;
+    box-shadow: 0 0 10px 0 #00FFF7;
+    animation: altereSombra 2s infinite;
+}
+
+@keyframes altereSombra{
+  0% {
+    box-shadow: 0 0 10px 0 #00FFF7;
+  } 25% {
+    box-shadow: 2px 0 10px 0 #00FFF7;
+  } 50% {
+    box-shadow: 1px 2px 10px 0 #00FFF7;
+  } 75%{
+    box-shadow: 1px 1px 10px 1px #00FFF7;
+  } 100% {
+    box-shadow: 0 0 10px 0 #00FFF7;
+  }
+}
+
+#textoTutorial{
+  font-size: 30px;
+  text-align: center;
+  animation: altereCor2 4s infinite;
+}
+
+@keyframes altereCor2 {
+  0% {
+    color:white;
+  }
+  25% {
+    color:#7DE3FF;
+  } 50% {
+    color: #6EFFFE;
+  } 100% {
+    color:#FFFFFF;
+  }
+  
+}
+
+#btnJogar{
+  margin-left: 22%;
+  height:8vh;
+  width:10vw;
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  background: blue;
+  color: #fff;
+  border: 2px solid #0900FF91;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #FFFFFFBF;
+}
+
+
+
+#painel{
+  display:none;
+}
+
+#escondeCartas{
+  display:none;
+}
+
+#painelCartas{
+  display:none;
+} 

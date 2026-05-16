@@ -1,0 +1,228 @@
+#campoSuporte {
+  min-height: 160px;
+  border: solid 2px blue;
+  padding: 10px;
+  align-content: center;
+}
+
+#suporteCartas {
+  border: solid 2px #0058FF;
+  min-height: 120px;
+  max-width: 30vw;
+}
+
+#painelCartas {
+  
+  border: solid 2px #FF00F1;
+  min-height: 70vh;
+  max-width: 60vw;
+  position: relative;
+  bottom: 700px;
+  margin: auto;
+}
+
+#escondeCartas  {
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  gap: 20px;
+}
+
+/* AGUA */
+
+#carta1 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: blue;
+  margin: auto;
+}
+
+/* FOGO */
+
+#carta2 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #ff0101;
+  margin: auto;
+}
+
+/* METAL */
+
+#carta3 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #496891;
+  margin: auto;
+}
+
+/* GELO */
+
+#carta4 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #6CFFE9;
+  margin: auto;
+}
+
+/* BORRACHA */
+
+#carta5 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #614838;
+  margin: auto;
+}
+
+/* ELETRICIDADE */
+
+#carta6 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #ffee00;
+  margin: auto;
+}
+
+/* FINAL CARTAS BASE */
+
+
+
+/* COMEÇO CARTAS GENÉTICAS Z */
+
+/*  AGUA Z */
+
+#carta7 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #0045c5;
+  margin: auto;
+}
+
+/* FOGO Z */
+
+#carta8 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #e65353;
+  margin: auto;
+}
+
+/* METAL Z */
+
+#carta9 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #7db0f1;
+  margin: auto;
+}
+
+/* GELO Z */
+
+#carta10 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #56ffb9;
+  margin: auto;
+}
+
+/* BORRACHA Z */
+
+#carta11 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #bb6f40;
+  margin: auto;
+}
+
+/* ELETRICIDADE Z */
+
+#carta12 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background: #fbff00;
+  margin: auto;
+}
+
+/* FINAL CARTAS GENÉTICAS Z */
+
+
+
+/* COMEÇO CARTAS GENÉTICAS S */
+
+/* AGUA S */
+
+#carta13 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background-image: linear-gradient(to bottom, #0059ff, #7622fd);
+  margin: auto;
+}
+
+/* FOGO S */
+
+#carta14 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background-image: linear-gradient(to bottom, #ff0000, #ff4c97);
+  margin: auto;
+}
+
+/* METAL S */
+
+#carta15 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background-image: linear-gradient(to bottom, #496891, #bae7f8);
+  margin: auto;
+}
+
+/* GELO S */
+
+#carta16 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background-image: linear-gradient(to bottom, #6CFFE9, #00ff2a);
+  margin: auto;
+}
+
+/* BORRACHA S */
+
+#carta17 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background-image: linear-gradient(to bottom, #614838, #ff8800);
+  margin: auto;
+}
+
+/* ELETRICIDADE S */
+
+#carta18 {
+  border: solid 2px black;
+  min-height: 20vh;
+  width: 140px;
+  background-image: linear-gradient(to bottom, #ffee00, #b2fd02);
+  margin: auto;
+}

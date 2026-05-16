@@ -1,0 +1,29 @@
+#painel {
+  min-height: 80vh;
+  border: solid 2px red;
+  max-width: 70vw;
+  margin: auto;
+  padding: 10px;
+}
+
+#navbar {
+  min-height: 50px;
+  max-width: 60vw;
+  margin: auto;
+  border: 2px solid #A11600;
+}
+
+#campoBatalha {
+  border: solid 2px #FF4949;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  height: 60vh;
+  
+}
+
+#campoBatalha div {
+  border: solid 2px #FF0039;
+}
+
+
