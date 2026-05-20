@@ -1,26 +1,26 @@
 
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body{
     background: black;
     margin: auto;
-    padding: 10%;
+    padding: 20px;
 }
 
 #cor{
     background-color: blue;
     border: solid 2px white;
     box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.452);
-
+    border-radius: 20px;
+    
     margin: auto;
 
-    border-radius: 20px;
     width: 50vw;
-    height: 30vh;
+    height: 40vh;
 }
 
 #mudar{
