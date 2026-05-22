@@ -9,14 +9,90 @@
 <body>
 
     <section class="painel">
+
+
         <section class="menu">
+
             <div class="header">
+
                 <li><a href="#"> MINHA EVOLUÇÃO </a></li>
-                <li onclick="mudaCor()"> <button> Nível </button></li>
-                <li></li>
-                <li></li>
+                
+                <li id="nivel" onclick="painelNivel()" style="cursor: pointer"> 
+                    Nível 
+                </li>
+                
+                <li id="principais" onclick="painelPrincipais()" style="cursor: pointer;"> 
+                    Principais 
+                </li>
+                
+                <li><a href="#"> Suporte </a></li>
+
             </div>
+
         </section>
+
+
+        <div class="status">
+
+            <div id="emblemaNivel" onclick="abrirEmblema()">
+                <!-- COLOCAR IMG -->
+            </div>
+
+            <h1 id="textNivel"> 
+                MAMUTE
+            </h1>
+
+        </div>
+
+
+        <div class="recordacoes">
+
+
+            !Atualize seu Shape!
+            <input type="file" id="arquivos">
+        </div>
+
+
+        <section id="painelTarefas">
+
+
+            <button onclick="abrirTarefas()" style="cursor: pointer;"> ABRIR </button>
+        </section>
+
+
+        <div id="addCompromissos">
+
+            <div>
+
+                <img src="" alt="" id="icon">
+
+                <h3> Adicionar </h3>
+                <h2> TAREFA </h2>
+
+            </div>
+
+            <div>
+
+                <input type="text" placeholder="ADICIONAR" id="guardarTarefas">
+
+            </div>
+
+        </div>
+
+
+         <div class="caixaTreino">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
     </section>
 
 
