@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TESTE </title>
+</head>
+
+<style>
+
+body{
+  background-color:black;
+  margin-top:30%;
+  margin:10%;
+  max-width: 5000px;
+}
+
+  
+#fogoAp{
+  background-color:red;
+  font-size:40px;
+  color:white;
+  text-align:center;
+  position: absolute;
+  
+  width: 90px;
+  height:150px;
+}
+
+#aguaAp{
+  background-color:blue;
+  font-size:40px;
+  color:white;
+  text-align:center;
+  
+  width: 90px;
+  height:150px;
+  
+  position: relative;
+  bottom: 190px;
+  left:80%;
+} 
+
+
+
+</style>
+
+<body id="mundo">
+
+        <div id="barraHp">
+                
+        </div>
+
+        <div id="fogoAp">
+            <p>
+            00
+            <br />
+            _
+            </p>
+        </div>
+   
+
+    
+    <!-- <div id="aguaAp">
+        <p>
+        00
+        <br />
+        V
+        </p>
+    </div> -->
+
+
+
+
+    <script>
+
+        // PERSONAGEM
+        let player = document.getElementById("fogoAp")
+
+        // Definição de posição do personagem, Horizontal e Vertical! 
+        let x = 100
+        let y = 300
+
+        // Pares do SISTEMA
+
+        let direita = false
+        let esquerda = false
+
+        // Definição do chão para não subir infinitamente
+        let chao = true
+
+        // Pares do SISTEMA
+        let velocidadeY = 0
+        let velocidadeX = 0
+
+        let campoForca = false
+
+        let mundo = document.getElementById("mundo")
+        let cameraX = 0
+        let cameraY = 0
+
+        
+        
+
+        // MÉTODO PARA ANDAR 
+        document.addEventListener("keydown", function(event){
+            
+            if(event.key == "d"){
+                direita = true
+
+            } else if(event.key == "a"){
+                esquerda = true
+            }
+            
+        }) 
+
+        document.addEventListener("keyup", function(event){
+            
+            if(event.key == "d"){
+                direita = false
+
+            } else if(event.key == "a"){
+                esquerda = false
+            }
+            
+        }) 
+
+        setInterval(function(){
+            if(direita){
+                x += 15   
+            } 
+            
+            if(esquerda) {
+                x -= 15
+            }dwd
+
+            player.style.left = x + "px"
+        }, 10)
+        // FINAL MÉTODO PARA ANDAR
+
+
+        // MÉTODO PARA PULAR
+        document.addEventListener("keyup", function(event){
+
+            if(event.key == "w" && chao ){
+
+                velocidadeY =- 20
+                chao = false
+
+            }
+        })
+
+        setInterval(function(){
+
+                    velocidadeY += 1
+                   
+                    y += velocidadeY 
+
+                    if(y > 300){
+                         y = 300
+                    
+
+
+                         velocidadeY = 0
+                         chao = true
+                    }
+                    
+                    player.style.top = y + "px"
+                    player.style.left = x + "px"
+
+                }, 10)
+         // FINAL MÉTODO PARA PULAR
+
+        //  FUNÇÃO PARA BOLA DE FOGO
+        document.addEventListener("keyup", function(event){
+            if(event.key == " " && !campoForca){
+
+                let bola = document.createElement("div")
+                bola.style.width = "60px"
+                bola.style.height = "60px"
+                bola.style.borderRadius = "40px"
+                bola.style.backgroundColor = "orange"
+                bola.style.position = "absolute"
+
+                bola.style.left = (player.offsetLeft + 80) + "px"
+                bola.style.top = (player.offsetTop + 40) + "px"
+
+                document.body.appendChild(bola)
+                
+                let bolaX = player.offsetLeft
+
+                 let moverBola = setInterval(function(){
+            
+                    bolaX += 20
+
+                    bola.style.left = bolaX + "px"
+
+                    if( bolaX > 1600){
+                        bola.remove()
+
+                        clearInterval(moverBola)
+                    }
+
+                }, 10)
+            }
+
+           
+        })
+
+        // CORTE DE FOGO
+        document.addEventListener("keyup", function(event){
+
+            if(event.key == "k" && !campoForca){
+
+                let corteFogo = document.createElement("div")
+
+                corteFogo.style.backgroundColor = "red"
+                corteFogo.style.width = "40px"
+                corteFogo.style.height = "20px"
+                corteFogo.style.borderRadius = "2000px"
+                corteFogo.style.position = "absolute"
+
+                corteFogo.style.left = (player.offsetLeft + 80) + "px"
+                corteFogo.style.top = (player.offsetTop + 40) + "px"
+
+                document.body.appendChild(corteFogo)
+
+                let corteFogoX = player.offsetLeft
+
+                let moverCorteFogo = setInterval(function(){
+                    corteFogoX += 30 
+
+                    corteFogo.style.left = corteFogoX + "px"
+
+                    if( corteFogoX > 1600){
+                        corteFogo.remove()
+
+                        clearInterval(moverCorteFogo)
+                    }
+
+                }, 10)
+            }
+
+
+           
+
+        })
+
+        // CAMPO DE FORÇA
+
+        document.addEventListener("keyup", function(event){
+            if(event.key == "s" && campoForca == false){
+
+                campoForca = true
+                 
+                let escudo = document.createElement("div")
+                escudo.style.backgroundColor = "#ff00007a"
+                escudo.style.border = "solid 2px red"
+                escudo.style.width = "40px"
+                escudo.style.height = "180px"
+                escudo.style.borderRadius = "40px"
+                escudo.style.position = "absolute"
+
+                escudo.style.left = (player.offsetLeft + 100) + "px"
+                escudo.style.top = (player.offsetTop - 15) + "px"
+
+                document.body.appendChild(escudo)
+
+                let seguirEscudo = setInterval(function(){
+                    escudo.style.left = (player.offsetLeft + 100) + "px"
+                    escudo.style.top = (player.offsetTop - 15) + "px"
+                }, 10)
+
+                setTimeout(function(){
+                    escudo.remove()
+                    clearInterval(seguirEscudo)
+
+                    campoForca = false
+                }, 1200)
+            } 
+        })
+
+
+    
+
+        let fogo = {
+            vida: 100,
+
+            
+        }
+
+        let agua = {
+            vida: 100,
+        }
+
+    </script>
+</body>
+</html>
