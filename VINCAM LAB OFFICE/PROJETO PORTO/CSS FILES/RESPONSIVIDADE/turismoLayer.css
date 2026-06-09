@@ -1,0 +1,52 @@
+@media screen and (max-width: 1600px){
+
+#turismoOne{
+ margin-top: 25% ;
+ width: 500px;
+margin-left: 10%;
+}
+
+#turismoTwo{
+margin-top: 10%;
+transform: rotate(3deg);
+width: 600px;
+}
+
+#turismoTrhee{
+margin-top: 20%;
+ transform: rotate(-3deg);
+ width: 600px;
+}
+
+#turismoFour{
+margin-top: 20%;
+width: 500px;
+margin-left: 35%;
+}
+
+#turismoFive{
+margin-top: 25%;
+width: 500px;
+margin-left: 10%;
+}
+
+#turismoSix{
+margin-top: 10%;
+transform: rotate(3deg);
+width: 600px;
+}
+
+#turismoSeven{
+margin-top: 20%;
+ transform: rotate(-3deg);
+ width: 600px;
+}
+
+#turismoEight{
+margin-top: 20%;
+width: 500px;
+margin-left: 35%;
+}
+
+}
+

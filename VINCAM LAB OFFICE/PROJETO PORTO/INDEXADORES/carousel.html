@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <title> Card </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+
+
+*{
+    margin:0px ;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1%;
+    background-color: rgb(79, 161, 255);
+}
+
+.sessionCard{
+    width: 1200px;
+    height: 500px;
+    border: solid 2px rgb(255, 251, 0);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 400px 500px;
+    gap: 15%;
+    justify-content: center;
+    align-content: center;
+    padding: 1%;
+    
+    
+}
+
+
+
+
+.painel1{
+    display: flex;
+    flex-direction: row;
+}
+
+.painel2{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgsFotos{
+    width: 200px;
+    height: 170px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: solid 1px rgb(255, 251, 0);
+    cursor: pointer;
+   
+}
+
+
+.imgCard1{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.imgCard1:hover{
+    transform: translateY(-8px) translate(-4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard2{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.imgCard2:hover{
+    transform: translateY(-8px) translate(4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard3{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.imgCard3:hover{
+    transform: translateY(8px) translate(-4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard4{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.imgCard4:hover{
+    transform: translateY(8px) translate(4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard{
+   width: 100%;
+   height: 100%;
+}
+
+/* CONTEÚDO JS */
+
+.titleIntro{
+    font-family: "Concert One" sans-serif;
+}
+
+.descriptionIntro{
+    font-family: "Concert One" sans-serif;
+}
+
+.painelFechado{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 20px;
+}
+
+.painelLigado{
+    opacity: 1;
+}
+
+.btnBack{
+    transition: transform 0.5s ease;
+    border: solid 1px rgba(255, 238, 0, 0.342);
+    background-color: rgba(255, 230, 0, 0.027);
+    box-shadow: 0 0 10px 0 rgb(255, 230, 1);
+    box-shadow: 1s ease;
+}
+
+.btnBack:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 20px 0px rgba(255, 238, 0, 0.78);
+}
+
+
+
+
+
+
+</style>
+
+<body>
+
+    <section class="sessionCard">
+        <div class="painelImgs">
+
+            <div class="painel1">
+
+                <div class="imgsFotos imgCard1" >
+                    <img src="/INDEXADORES/images/ILHA.jpg" alt="image" id="imgCard1" class="imgCard"  onclick="ampliar()">
+                </div>
+
+                <div class="imgsFotos imgCard2">
+                    <img src="/INDEXADORES/images/NÁUTICA.jpg" alt="image" id="imgCard2" class="imgCard" onclick="ampliar1()">
+                </div>
+
+            </div>
+
+            <div class="painel2">
+
+                <div class="imgsFotos imgCard3">
+                    <img src="images/PRAIA.jpg" alt="image" id="imgCard3" class="imgCard" onclick="ampliar2()">
+                </div>
+
+                <div class="imgsFotos imgCard4">
+                    <img src="images/QUIOSQUE.jpg" alt="image" id="imgCard4" class="imgCard" onclick="ampliar3()">
+                </div>
+
+            </div>
+            
+
+            
+                
+        </div>
+
+        <div class="textDescript">
+
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; text-align: center;"> CARD </h2>
+
+            <br><br> 
+
+            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px; text-align: justify;" >
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam veritatis dignissimos eaque, voluptatum voluptate, modi officia dicta eos amet
+                quisquam sequi cupiditate, dolorum reiciendis adipisci nemo nulla repudiandae autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iusto aspernatur laudantium delectus eos ea tempore et minima laboriosam. Maiores dolorem rem animi molestias pariatur eum quam, dignissimos omnis alias!
+            </p>
+
+        </div>
+
+    </section>
+
+   
+
+
+
+
+    
+    <script>
+
+        function ampliar(){
+
+            let caixaNova = document.createElement("section") 
+            caixaNova.classList.add("painelFechado")
+            caixaNova.style.width= "1500px"
+            caixaNova.style.height= "660px"
+            caixaNova.style.position= "absolute"
+            caixaNova.style.bottom = "70px"
+            caixaNova.style.backgroundColor = "rgba(20, 100, 255, 0.000)"
+            caixaNova.style.backdropFilter = "blur(7px)"
+
+            document.body.appendChild(caixaNova)
+
+            setTimeout(() =>{
+                caixaNova.classList.add("painelLigado")
+            }, 10)
+
+
+
+            let text1 = document.createElement("h2")
+            text1.style.fontSize = "40px"
+            text1.textContent = "ILHA DO PINGO"
+            text1.classList.add("titleIntro")
+            text1.style.textAlign = "center"
+            text1.style.position = "relative"
+            text1.style.top = "40px"
+            text1.style.fontFamily = "Concert One"
+            text1.style.fontFamily = "sans-serif"
+            text1.style.color = "rgb(255, 220, 0)"
+
+            caixaNova.appendChild(text1)
+
+
+
+
+            let botao = document.createElement("button")
+            botao.classList.add("btnBack")
+            botao.style.position = "relative"
+            botao.style.left = "35px"
+            botao.style.top = "10px"
+            botao.style.width = "140px"
+            botao.style.cursor = "pointer"
+            botao.style.borderRadius = "10px"
+
+
+            botao.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            caixaNova.appendChild(botao)
+
+
+            
+            let backArrow = document.createElement("i")
+            backArrow.classList.add("fa-solid")
+            backArrow.classList.add("fa-arrow-left")
+            backArrow.style.position="relative"
+            backArrow.style.left="-45px"
+            backArrow.style.top="13px"
+            backArrow.style.fontSize="25px"
+            backArrow.style.cursor = "pointer"
+            backArrow.style.color = "white"
+            
+            backArrow.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            botao.appendChild(backArrow)
+
+
+
+            let voltar = document.createElement("h3")
+            voltar.textContent = "VOLTAR"
+            voltar.classList.add("voltar")
+            voltar.style.position = "relative"
+            voltar.style.bottom = "10px"
+            voltar.style.left = "20px"
+            voltar.style.fontSize = "20px"
+            voltar.style.cursor = "pointer"
+            voltar.style.color = "white"
+
+            voltar.addEventListener("click", function(){
+                caixaNova.classList.remove("painelLigado")
+
+                setTimeout(() => {
+                    caixaNova.remove()
+                }, 500)
+
+
+            })
+
+            botao.appendChild(voltar)
+
+
+
+            let guardImg = document.createElement("div")
+            guardImg.style.width="900px"
+            guardImg.style.height="500px"
+            guardImg.style.position = "relative"
+            guardImg.style.top = "50px"
+            guardImg.style.left = "20px"
+
+            caixaNova.appendChild(guardImg)
+
+            
+
+            let description = document.createElement("div")
+            description.style.width = "500px"
+            description.style.height = "500px"
+            description.style.position = "relative"
+            description.style.left = "970px"
+            description.style.bottom = "450px"
+            description.style.alignContent = "center"
+            description.style.justifyContent = "center"
+
+            caixaNova.appendChild(description)
+
+
+
+            let text2 = document.createElement("h1")
+            text2.style.fontSize = "21px"
+
+            text2.textContent = 'A Ilha do Pingo é uma das ilhas fluviais que compõem a paisagem do Rio Paraná, próxima à região de Porto Rico e Porto Maringá. Conhecida por suas águas tranquilas e cenários naturais preservados, tornou-se um ponto procurado por turistas, pescadores e amantes da navegação. Sua formação está ligada ao próprio processo natural do rio, que ao longo dos anos moldou bancos de areia e áreas de vegetação. Quanto ao nome "Pingo", não existe um registro histórico oficial amplamente reconhecido, sendo sua origem atribuída principalmente à tradição popular dos moradores e frequentadores da região. Atualmente, a ilha é considerada um dos refúgios naturais mais conhecidos do noroeste paranaense.'
+
+            text2.classList.add("descriptionIntro")
+            text2.style.textAlign = "center"
+            text2.style.color = "white"
+            text2.style.fontFamily = "Nunito"
+            text2.style.fontFamily = "sans-serif"
+
+            description.appendChild(text2)
+
+            
+
+            let imageGrande = document.createElement("img")
+            imageGrande.src = "images/ILHA.jpg"
+            imageGrande.alt = "ilhaPorto"
+            imageGrande.style.borderRadius = "10px"
+
+            guardImg.appendChild(imageGrande)
+            
+        };
+
+
+
+        function ampliar1(){
+
+            let caixaNova = document.createElement("section") 
+            caixaNova.classList.add("painelFechado")
+            caixaNova.style.width= "1500px"
+            caixaNova.style.height= "660px"
+            caixaNova.style.position= "absolute"
+            caixaNova.style.bottom = "70px"
+            caixaNova.style.backgroundColor = "rgba(20, 100, 255, 0.000)"
+            caixaNova.style.backdropFilter = "blur(7px)"
+
+            document.body.appendChild(caixaNova)
+
+            setTimeout(() =>{
+                caixaNova.classList.add("painelLigado")
+            }, 10)
+
+
+
+            let text1 = document.createElement("h2")
+            text1.style.fontSize = "40px"
+            text1.textContent = "NÁUTICA PORTO MARINGÁ"
+            text1.classList.add("titleIntro")
+            text1.style.textAlign = "center"
+            text1.style.position = "relative"
+            text1.style.top = "40px"
+            text1.style.fontFamily = "Concert One"
+            text1.style.fontFamily = "sans-serif"
+            text1.style.color = "rgb(255, 220, 0)"
+
+            caixaNova.appendChild(text1)
+
+
+
+
+            let botao = document.createElement("button")
+            botao.classList.add("btnBack")
+            botao.style.position = "relative"
+            botao.style.left = "35px"
+            botao.style.top = "10px"
+            botao.style.width = "140px"
+            botao.style.cursor = "pointer"
+            botao.style.borderRadius = "10px"
+
+
+            botao.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            caixaNova.appendChild(botao)
+
+
+            
+            let backArrow = document.createElement("i")
+            backArrow.classList.add("fa-solid")
+            backArrow.classList.add("fa-arrow-left")
+            backArrow.style.position="relative"
+            backArrow.style.left="-45px"
+            backArrow.style.top="13px"
+            backArrow.style.fontSize="25px"
+            backArrow.style.cursor = "pointer"
+            backArrow.style.color = "white"
+            
+            backArrow.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            botao.appendChild(backArrow)
+
+
+
+            let voltar = document.createElement("h3")
+            voltar.textContent = "VOLTAR"
+            voltar.classList.add("voltar")
+            voltar.style.position = "relative"
+            voltar.style.bottom = "10px"
+            voltar.style.left = "20px"
+            voltar.style.fontSize = "20px"
+            voltar.style.cursor = "pointer"
+            voltar.style.color = "white"
+
+            voltar.addEventListener("click", function(){
+                caixaNova.classList.remove("painelLigado")
+
+                setTimeout(() => {
+                    caixaNova.remove()
+                }, 500)
+
+
+            })
+
+            botao.appendChild(voltar)
+
+
+
+            let guardImg = document.createElement("div")
+            guardImg.style.width="900px"
+            guardImg.style.height="500px"
+            guardImg.style.position = "relative"
+            guardImg.style.top = "50px"
+            guardImg.style.left = "20px"
+
+            caixaNova.appendChild(guardImg)
+
+            
+
+            let description = document.createElement("div")
+            description.style.width = "500px"
+            description.style.height = "500px"
+            description.style.position = "relative"
+            description.style.left = "970px"
+            description.style.bottom = "450px"
+            description.style.alignContent = "center"
+            description.style.justifyContent = "center"
+
+            caixaNova.appendChild(description)
+
+
+
+            let text2 = document.createElement("h1")
+            text2.style.fontSize = "21px"
+
+            text2.textContent = 'O turismo náutico é uma das principais atrações de Porto Maringá, atraindo visitantes de diversas regiões em busca de lazer e aventura sobre as águas do Rio Paraná. A ampla extensão navegável do rio oferece condições ideais para passeios de lancha, jet ski e embarcações de recreio. A infraestrutura local conta com rampas de acesso, marinas e áreas de apoio para navegadores. Além da prática esportiva, os turistas podem explorar ilhas, bancos de areia e cenários naturais únicos da região. O contato direto com a natureza e a tranquilidade das águas tornam a experiência ainda mais especial. Atualmente, o turismo náutico é um dos grandes responsáveis pelo desenvolvimento turístico e econômico de Porto Maringá.'
+
+            text2.classList.add("descriptionIntro")
+            text2.style.textAlign = "center"
+            text2.style.color = "white"
+            text2.style.fontFamily = "Nunito"
+            text2.style.fontFamily = "sans-serif"
+
+            description.appendChild(text2)
+
+            
+
+            let imageGrande = document.createElement("img")
+            imageGrande.src = "images/NÁUTICA.jpg"
+            imageGrande.alt = "nautica"
+            imageGrande.style.borderRadius = "10px"
+
+            
+            guardImg.appendChild(imageGrande)
+            
+        }
+
+
+
+        function ampliar2(){
+
+           let caixaNova = document.createElement("section") 
+            caixaNova.classList.add("painelFechado")
+            caixaNova.style.width= "1500px"
+            caixaNova.style.height= "660px"
+            caixaNova.style.position= "absolute"
+            caixaNova.style.bottom = "70px"
+            caixaNova.style.backgroundColor = "rgba(20, 100, 255, 0.000)"
+            caixaNova.style.backdropFilter = "blur(7px)"
+
+            document.body.appendChild(caixaNova)
+
+            setTimeout(() =>{
+                caixaNova.classList.add("painelLigado")
+            }, 10)
+
+
+
+            let text1 = document.createElement("h2")
+            text1.style.fontSize = "40px"
+            text1.textContent = "PRAINHAS PORTO MARINGÁ"
+            text1.classList.add("titleIntro")
+            text1.style.textAlign = "center"
+            text1.style.position = "relative"
+            text1.style.top = "40px"
+            text1.style.fontFamily = "Concert One"
+            text1.style.fontFamily = "sans-serif"
+            text1.style.color = "rgb(255, 220, 0)"
+
+            caixaNova.appendChild(text1)
+
+
+
+
+            let botao = document.createElement("button")
+            botao.classList.add("btnBack")
+            botao.style.position = "relative"
+            botao.style.left = "35px"
+            botao.style.top = "10px"
+            botao.style.width = "140px"
+            botao.style.cursor = "pointer"
+            botao.style.borderRadius = "10px"
+
+
+            botao.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            caixaNova.appendChild(botao)
+
+
+            
+            let backArrow = document.createElement("i")
+            backArrow.classList.add("fa-solid")
+            backArrow.classList.add("fa-arrow-left")
+            backArrow.style.position="relative"
+            backArrow.style.left="-45px"
+            backArrow.style.top="13px"
+            backArrow.style.fontSize="25px"
+            backArrow.style.cursor = "pointer"
+            backArrow.style.color = "white"
+            
+            backArrow.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            botao.appendChild(backArrow)
+
+
+
+            let voltar = document.createElement("h3")
+            voltar.textContent = "VOLTAR"
+            voltar.classList.add("voltar")
+            voltar.style.position = "relative"
+            voltar.style.bottom = "10px"
+            voltar.style.left = "20px"
+            voltar.style.fontSize = "20px"
+            voltar.style.cursor = "pointer"
+            voltar.style.color = "white"
+
+            voltar.addEventListener("click", function(){
+                caixaNova.classList.remove("painelLigado")
+
+                setTimeout(() => {
+                    caixaNova.remove()
+                }, 500)
+
+
+            })
+
+            botao.appendChild(voltar)
+
+
+
+            let guardImg = document.createElement("div")
+            guardImg.style.width="900px"
+            guardImg.style.height="500px"
+            guardImg.style.position = "relative"
+            guardImg.style.top = "50px"
+            guardImg.style.left = "20px"
+
+            caixaNova.appendChild(guardImg)
+
+            
+
+            let description = document.createElement("div")
+            description.style.width = "500px"
+            description.style.height = "500px"
+            description.style.position = "relative"
+            description.style.left = "970px"
+            description.style.bottom = "450px"
+            description.style.alignContent = "center"
+            description.style.justifyContent = "center"
+
+            caixaNova.appendChild(description)
+
+
+
+            let text2 = document.createElement("h1")
+            text2.style.fontSize = "21px"
+
+            text2.textContent = 'As prainhas de Porto Maringá estão entre os atrativos naturais mais procurados da região, especialmente durante os períodos de calor e de baixa do Rio Paraná. Formadas por extensos bancos de areia clara, elas criam cenários semelhantes a praias litorâneas em pleno interior do Paraná. Suas águas calmas e limpas oferecem um ambiente ideal para banho, lazer em família e passeios de barco. Durante a temporada, turistas e moradores aproveitam o local para relaxar, praticar esportes aquáticos e contemplar a paisagem natural. Além da beleza cênica, as prainhas se destacam pelo contato direto com a natureza e pela atmosfera tranquila que caracteriza Porto Maringá. Atualmente, elas representam um dos principais cartões-postais e símbolos turísticos da região.'
+
+            text2.classList.add("descriptionIntro")
+            text2.style.textAlign = "center"
+            text2.style.color = "white"
+            text2.style.fontFamily = "Nunito"
+            text2.style.fontFamily = "sans-serif"
+
+            description.appendChild(text2)
+
+            
+
+            let imageGrande = document.createElement("img")
+            imageGrande.src = "images/PRAIA.jpg"
+            imageGrande.alt = "praiaPorto"
+            imageGrande.style.borderRadius = "10px"
+
+            
+            guardImg.appendChild(imageGrande)
+            
+        }
+
+
+
+        function ampliar3(){
+
+            let caixaNova = document.createElement("section") 
+            caixaNova.classList.add("painelFechado")
+            caixaNova.style.width= "1500px"
+            caixaNova.style.height= "660px"
+            caixaNova.style.position= "absolute"
+            caixaNova.style.bottom = "70px"
+            caixaNova.style.backgroundColor = "rgba(20, 100, 255, 0.000)"
+            caixaNova.style.backdropFilter = "blur(7px)"
+
+            document.body.appendChild(caixaNova)
+
+            setTimeout(() =>{
+                caixaNova.classList.add("painelLigado")
+            }, 10)
+
+
+
+            let text1 = document.createElement("h2")
+            text1.style.fontSize = "40px"
+            text1.textContent = "QUIOSQUE PORTO MARINGÁ"
+            text1.classList.add("titleIntro")
+            text1.style.textAlign = "center"
+            text1.style.position = "relative"
+            text1.style.top = "40px"
+            text1.style.fontFamily = "Concert One"
+            text1.style.fontFamily = "sans-serif"
+            text1.style.color = "rgb(255, 220, 0)"
+
+            caixaNova.appendChild(text1)
+
+
+
+
+            let botao = document.createElement("button")
+            botao.classList.add("btnBack")
+            botao.style.position = "relative"
+            botao.style.left = "35px"
+            botao.style.top = "10px"
+            botao.style.width = "140px"
+            botao.style.cursor = "pointer"
+            botao.style.borderRadius = "10px"
+
+
+            botao.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            caixaNova.appendChild(botao)
+
+
+            
+            let backArrow = document.createElement("i")
+            backArrow.classList.add("fa-solid")
+            backArrow.classList.add("fa-arrow-left")
+            backArrow.style.position="relative"
+            backArrow.style.left="-45px"
+            backArrow.style.top="13px"
+            backArrow.style.fontSize="25px"
+            backArrow.style.cursor = "pointer"
+            backArrow.style.color = "white"
+            
+            backArrow.addEventListener("click", function(){
+
+                caixaNova.classList.remove("painelLigado")
+                
+                setTimeout(() =>{
+                    caixaNova.remove()
+                }, 500)
+
+            })
+
+            botao.appendChild(backArrow)
+
+
+
+            let voltar = document.createElement("h3")
+            voltar.textContent = "VOLTAR"
+            voltar.classList.add("voltar")
+            voltar.style.position = "relative"
+            voltar.style.bottom = "10px"
+            voltar.style.left = "20px"
+            voltar.style.fontSize = "20px"
+            voltar.style.cursor = "pointer"
+            voltar.style.color = "white"
+
+            voltar.addEventListener("click", function(){
+                caixaNova.classList.remove("painelLigado")
+
+                setTimeout(() => {
+                    caixaNova.remove()
+                }, 500)
+
+
+            })
+
+            botao.appendChild(voltar)
+
+
+
+            let guardImg = document.createElement("div")
+            guardImg.style.width="900px"
+            guardImg.style.height="500px"
+            guardImg.style.position = "relative"
+            guardImg.style.top = "50px"
+            guardImg.style.left = "20px"
+
+            caixaNova.appendChild(guardImg)
+
+            
+
+            let description = document.createElement("div")
+            description.style.width = "500px"
+            description.style.height = "500px"
+            description.style.position = "relative"
+            description.style.left = "970px"
+            description.style.bottom = "450px"
+            description.style.alignContent = "center"
+            description.style.justifyContent = "center"
+
+            caixaNova.appendChild(description)
+
+
+
+            let text2 = document.createElement("h1")
+            text2.style.fontSize = "21px"
+
+            text2.textContent = 'Os quiosques de Porto Maringá complementam a experiência turística da região, oferecendo conforto e praticidade aos visitantes que frequentam as margens do Rio Paraná. Localizados próximos às áreas de lazer e às prainhas, esses espaços servem como ponto de encontro para famílias, amigos e turistas durante todo o ano. Além de proporcionarem sombra e descanso, os quiosques são frequentemente utilizados para confraternizações, refeições e momentos de contemplação da paisagem natural. Sua presença contribui para a infraestrutura turística do porto, tornando a permanência dos visitantes mais agradável e organizada. Com vista privilegiada para o rio e para os belos pôres do sol da região, os quiosques se tornaram parte importante da identidade turística de Porto Maringá.'
+
+            text2.classList.add("descriptionIntro")
+            text2.style.textAlign = "center"
+            text2.style.color = "white"
+            text2.style.fontFamily = "Nunito"
+            text2.style.fontFamily = "sans-serif"
+
+            description.appendChild(text2)
+
+            
+
+            let imageGrande = document.createElement("img")
+            imageGrande.src = "images/QUIOSQUE.JPG"
+            imageGrande.alt = "quiosquePorto"
+            imageGrande.style.borderRadius = "10px"
+
+            
+            guardImg.appendChild(imageGrande)
+            
+        }
+
+
+
+        
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+
+.contentTurismo{
+    display: grid;
+    grid-template-columns: 500px 900px;
+    gap: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.turismoClass{
+    width: 500px;
+    
+    
+} 
+
+.turismoClass2{
+    width: 500px;
+    
+   
+}
+
+.imgsTurismo{
+    width: 700px;
+    
+    margin-left: 15%;
+    
+}
+
+.imgsTurismo2{
+    width: 700px;
+   
+    margin-left: 8%;
+}
+
+
+#text1{
+     margin-left: 70%;
+     font-size: 30px;
+  
+     
+    
+}
+
+#text2{
+    margin-left: 70%;
+    font-size: 50px;
+      
+}

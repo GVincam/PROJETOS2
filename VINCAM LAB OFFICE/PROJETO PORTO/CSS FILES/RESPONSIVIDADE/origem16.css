@@ -1,0 +1,98 @@
+@media (max-width: 1600){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titleMaringa{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 30%; 
+    padding: 20px;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(180deg, #00a2ff00, #00a2ffc4,  #00a3ff);
+
+}
+
+#portoMaringaT{
+    font-size: 40px;
+}
+
+#pantanalParanaense{
+    font-size: 40px;
+}
+
+.contentOrigem{
+     background-image: linear-gradient(180deg, #00a2ff,  #00a3ff, #00a3ff,rgb(0, 110, 255));
+     position: relative;
+     /* bottom: 360px; */
+}
+
+.contentHistory{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 90px;
+    padding: 10px;
+    justify-content: center;
+
+}
+/* SALVANDO */
+ /*CONTENT ONE AND TWO */
+
+ .contentOne{
+    width: 500px;
+    margin-top: 90px;
+ }
+
+.contentOne h3{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.contentOne h1{
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+.contentOne p{
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.contentTwo{
+    width: 600px;
+    margin-top: 90px;
+}
+
+#tucunare{
+    width: 380px;
+    margin-left: 150px;
+}
+
+#maringa{
+    width: 380px;
+}
+
+/* CONTENT THREE AND FOUR */
+
+.contentTrhee{
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40px;
+    margin-top: 90px;
+}
+
+.contentFour{
+    width: 500px;
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+
+
+
+}

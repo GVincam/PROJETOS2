@@ -1,0 +1,195 @@
+
+.cardsFotos{
+    background-image: linear-gradient(180deg, rgb(0, 110, 255), rgb(0, 110, 255), rgb(255, 208, 0));
+    padding: 6%;
+}
+
+.sessionCard{
+    width: 1400px;
+    height: 500px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 400px 500px;
+    gap: 15%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 1%;
+}
+
+.painel1{
+    display: flex;
+    flex-direction: row;
+}
+
+.painel2{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgsFotos{
+    width: 200px;
+    height: 170px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border: solid 1px rgb(255, 251, 0);
+    cursor: pointer;
+   
+}
+
+
+.imgCard1{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.imgCard1:hover{
+    transform: translateY(-8px) translate(-4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard2{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.imgCard2:hover{
+    transform: translateY(-8px) translate(4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard3{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.imgCard3:hover{
+    transform: translateY(8px) translate(-4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard4{
+    transition: transform 0.5s ease;
+    box-shadow: 0.5s ease;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.imgCard4:hover{
+    transform: translateY(8px) translate(4px);
+    box-shadow: 0px 0px 10px 0px white ;
+}
+
+.imgCard{
+   width: 100%;
+   height: 100%;
+}
+
+/* CONTEÚDO JS */
+
+.painelFechado{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 84, 252, 0.4);
+    backdrop-filter: blur(7px);
+}
+
+.painelLigado{
+    opacity: 1;
+}
+
+.titleIntro{
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-family: "Concert One" sans-serif;
+    color: rgb(255, 220, 0);
+}
+
+.btnBack{
+    transition: transform 0.5s ease;
+    border: solid 1px rgba(255, 238, 0, 0.342);
+    background-color: rgba(255, 230, 0, 0.027);
+    box-shadow: 0 0 10px 0 rgb(255, 230, 1);
+    box-shadow: 1s ease;
+    position: relative;
+    left:35px;
+    top: 10px;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btnBack:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 20px 0px rgba(255, 238, 0, 0.78);
+}
+
+.fa-solid{
+    position: relative;
+    left: -45px;
+    top: 13px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.voltar{
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.guardImg{
+    width: 900px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.description{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 60%;
+    bottom: 38%;
+    align-content: center;
+    justify-content: center;
+}
+
+.descriptionIntro{
+    font-size: 25px;
+    text-align: end;
+    color: white;
+    font-family: "Nunito" sans-serif;
+}
+
+.imageGrande{
+    border-radius: 10px;
+    border: solid 1px yellow;
+    position: relative;
+    left: 15%;
+    bottom: -20%;
+
+}
+
+
+
+

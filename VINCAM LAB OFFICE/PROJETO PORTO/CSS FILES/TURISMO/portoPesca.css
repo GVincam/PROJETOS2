@@ -1,0 +1,55 @@
+.menuSecundario{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    justify-content: center;
+
+    background-color: blue;
+    height: 200px;
+    position: relative;
+}
+
+.dSecundarios{
+    position: relative;
+    bottom: 140px;
+}
+
+#logoPPSecundario{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 120px;
+}
+
+#pontoPesca{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    top: 25px;
+}
+
+#lisPeixe{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 10px;
+    position: relative;
+    bottom: 175px;
+}
+
+#lisPeixe, li{
+    gap: 20px;
+    height: 40px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+   
+}
+
+#lisPeixe, a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 34px;
+}

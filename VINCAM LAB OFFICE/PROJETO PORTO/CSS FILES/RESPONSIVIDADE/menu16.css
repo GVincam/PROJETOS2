@@ -1,0 +1,61 @@
+@media screen and (max-width: 1610px){
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
+    background-color:  #00a3ff;
+    max-height: 18vh;
+    border-radius: 0px 0px 20px 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.caixaPontos{
+    display: grid;
+    grid-template-columns: 80px 160px 200px 210px 195px;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 20px;
+    position: absolute; 
+    border-radius: 0px 0px 20px 0px ;
+    top: 129px; 
+    left: -110px; 
+    background-color: white;
+    width: 960px;
+    height: 55px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.divPoints{
+    align-items: center;
+    justify-items: center;
+   
+}
+
+
+#imgPorto{
+    max-width: 100%;
+}
+
+
+#logoPP{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+}
